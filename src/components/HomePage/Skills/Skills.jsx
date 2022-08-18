@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../constants/styles';
-import SubTitle from '../Elements/SubTitle';
+import { colors } from '../../../constants/styles';
+import SubTitle from '../../Elements/SubTitle';
 import { 
     SiAdobeaftereffects, 
     SiAdobeaudition, 
@@ -27,20 +27,34 @@ const SkillsSection = styled.section`
     align-items: center;
     justify-content: center;
 
-    position: relative;
+    @media (max-width: 767px) {
+        height: fit-content;
+        margin: 5rem 0rem;
+    }
 `;
 
 const SkillsBox = styled.ul`
     height: fit-content;
     width: 80rem; 
-    background: ${colors.primaryDarker};
-    background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(72,199,240,0.2) 50%, rgba(72,199,240,0.5) 100%);
+    background: ${colors.primary};
+    background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
     border-radius: 30px;
     padding: 5rem 4rem;
 
     display: flex;
     flex-direction: column; 
     gap: 4rem;
+
+    position: relative;
+
+    @media (max-width: 767px) {
+        height: fit-content;
+        width: fit-content;
+        padding: 1rem;
+
+        flex-direction: column;
+        gap: 1rem;
+    }
 `;
 
 const SkillList = styled.ul`
@@ -51,17 +65,25 @@ const SkillList = styled.ul`
     flex-wrap: wrap;
     justify-content: center;
     gap: 6rem;
+
+    @media (max-width: 767px) {
+        gap: 1rem;
+    }
 `;
 
 const SkillIcon = styled.li`
     font-size: 4.5rem;
+
+    @media (max-width: 767px) {
+        font-size: 2rem;
+    }
 `;
 
 export const Skills = () => {
   return (
     <SkillsSection>
-        <SubTitle title='Technologies I use' top='7.5rem' left='-4rem'/>
         <SkillsBox>
+            <SubTitle title='Technologies I use'/>
             <SkillList>
                 <SkillIcon><SiAdobeaftereffects/></SkillIcon>
                 <SkillIcon><SiAdobeaudition/></SkillIcon>

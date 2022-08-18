@@ -5,12 +5,14 @@ import { colors } from '../../constants/styles';
 const SquareContainer = styled.div`
     height: 28rem;
     width: 28rem; 
-    background: ${colors.primaryDarker};
-    background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(72,199,240,0.2) 50%, rgba(72,199,240,0.5) 100%);
+    background: ${colors.primary};
+    background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
     border-radius: 30px;
+
+    position: absolute;
 `;
 
-const square = ({ratio, radius}) => {
+const Square = ({ratio, radius}) => {
   return (
     <SquareContainer style={{height:ratio, width:ratio, borderRadius:radius}}>
         
@@ -18,4 +20,4 @@ const square = ({ratio, radius}) => {
   )
 }
 
-export default square
+export default Square

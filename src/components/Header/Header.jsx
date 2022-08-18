@@ -21,6 +21,14 @@ const HeaderBox = styled.header `
 
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,6,18,1) 100%);  
+
+    @media (min-width: 768px) and (max-width: 1024px) { 
+
+    }
+
+    @media (max-width: 767px) {
+        padding: 0
+    }
 `;
 
 const NavList = styled.ul `
@@ -71,7 +79,9 @@ const Logo = styled.p `
     font-family: 'Maven Pro Black';
     font-size: 2.5rem;
 
-    background-color: transparent;
+    @media (max-width: 767px) {
+        font-size: 1.5rem;
+    }
 `;
 
 

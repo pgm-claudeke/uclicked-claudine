@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../constants/styles';
+import { colors } from '../../../constants/styles';
 import { FaInstagram, FaGithub, FaLinkedinIn, FaYoutube, FaVimeoV } from 'react-icons/fa';
 
 const SideContainer = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const Title = styled.h2`
@@ -14,6 +19,10 @@ const Title = styled.h2`
 
     font-family: 'Acumin Pro Black';
     font-size: 5rem;
+
+    @media (max-width: 767px) {
+        font-size: 2.2rem;
+    }
 `;
 
 const Marked = styled.p`
@@ -25,12 +34,21 @@ const Marked = styled.p`
 
     color: ${colors.primary};
     margin-left: 0.8rem;
+
+    @media (max-width: 767px) {
+        font-size: 2.2rem;
+    }
 `;
 
 const Description = styled.p`
     font-size: 1.5rem;
     width: 21rem;
     line-height: 1.5;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+        text-align: center;
+    }
 `;
 
 const MediaList = styled.div`
@@ -46,10 +64,19 @@ const MediaList = styled.div`
     width: fit-content;
     padding 0.5rem 1rem;
     border-radius: 8px;
+
+    @media (max-width: 767px) {
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
 `;
 
 const SocialIcon = styled.a`
     font-size: 1.2rem;
+
+    @media (max-width: 767px) {
+        font-size: 0.8rem;
+    }
 `;
 
 const TextIntro = () => {

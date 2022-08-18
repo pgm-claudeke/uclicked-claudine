@@ -9,7 +9,7 @@ const FooterBox = styled.div`
     width: 100vw;
     padding: 3rem 5rem;
     background: ${colors.primaryDarker};
-    background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(72,199,240,0.2) 70%, rgba(72,199,240,0.4) 100%);
+    background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
 
     display: flex;
     flex-direction: row;

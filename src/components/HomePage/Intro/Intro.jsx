@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TextIntro from './TextIntro';
 import Portrait from './Portrait';
+import Square from '../../Elements/Square';
 
 const IntroBox = styled.section`
     height: 100vh;
@@ -12,7 +13,24 @@ const IntroBox = styled.section`
     align-items: center;
     justify-content: center;
     gap: 18rem;
-`
+
+    @media (min-width: 768px) and (max-width: 1024px) { 
+
+    }
+
+    @media (max-width: 767px) {
+        height: fit-content;
+        margin-top: 5rem;
+
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+`;
+
+const BackGround = styled.div`
+    position: absolute;
+    opacity: 0.2;
+`;
 
 const Intro = () => {
   return (

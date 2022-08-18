@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SubTitle from '../Elements/SubTitle';
+import SubTitle from '../../Elements/SubTitle';
 import Specialization from './Specialization';
 import { BiCube, BiSquare, BiCodeBlock, BiMoviePlay } from 'react-icons/bi';
 import { AiOutlineAudio } from 'react-icons/ai';
@@ -13,7 +13,10 @@ const SpecializationsSection = styled.section`
     align-items: center;
     justify-content: center;
 
-    position: relative;
+    @media (max-width: 767px) {
+        height: fit-content;
+        margin: 5rem 0rem;
+    }
 `;
 
 const SpecializationsContainer = styled.div`
@@ -22,6 +25,13 @@ const SpecializationsContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+
+    position: relative;
+
+    @media (max-width: 767px) {
+        margin: 0 auto;
+        gap: 1rem;
+    }
 `;
 
 const SPECIALIZATIONS = [
@@ -56,8 +66,8 @@ const SPECIALIZATIONS = [
 const Specializations = () => {
   return (
     <SpecializationsSection>
-        <SubTitle title="What I do" />
         <SpecializationsContainer>
+            <SubTitle title="What I do" />
             {
                 SPECIALIZATIONS.map((specialization) => 
                     <Specialization icon={specialization.icon} name={specialization.name} description={specialization.description}/>

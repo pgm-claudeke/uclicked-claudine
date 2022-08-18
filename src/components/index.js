@@ -1,9 +1,9 @@
 import Header from "./Header/Header";
-import Intro from "./Intro/Intro";
-import Specializations from "./specializations/Specializations";
+import Intro from "./HomePage/Intro/Intro";
+import Specializations from "./HomePage/specializations/Specializations";
 import SubTitle from "./Elements/SubTitle";
 import Footer from "./Footer/Footer";
-import { Skills } from "./Skills/Skills";
+import { Skills } from "./HomePage/Skills/Skills";
 
 export {
   Header,
