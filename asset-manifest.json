@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/uclicked-claudine/static/css/main.a6655af3.css",
-    "main.js": "/uclicked-claudine/static/js/main.8b1ccb3f.js",
+    "main.js": "/uclicked-claudine/static/js/main.faf04c28.js",
+    "static/media/ClaudineLogo.png": "/uclicked-claudine/static/media/ClaudineLogo.2c67fb47ff3d4b16a339.png",
+    "static/media/Video_ThumbNail.png": "/uclicked-claudine/static/media/Video_ThumbNail.ce1c537c4011ccda5d9c.png",
+    "static/media/2D-ThumbNail.png": "/uclicked-claudine/static/media/2D-ThumbNail.4f6c8d1821421dc2407b.png",
+    "static/media/QG.jpg": "/uclicked-claudine/static/media/QG.f741bb789829a54e13e1.jpg",
+    "static/media/deKesel_Claudine.jpg": "/uclicked-claudine/static/media/deKesel_Claudine.30306afbe091cbda285e.jpg",
     "static/media/Roboto-Black.woff": "/uclicked-claudine/static/media/Roboto-Black.96852435b86e3b391cca.woff",
     "static/media/Roboto-Regular.woff": "/uclicked-claudine/static/media/Roboto-Regular.9d8e838eac631e46f9d0.woff",
     "static/media/Roboto-Black.woff2": "/uclicked-claudine/static/media/Roboto-Black.36801e847fe210eaedd2.woff2",
@@ -12,10 +17,10 @@
     "static/media/MavenPro-Black.woff2": "/uclicked-claudine/static/media/MavenPro-Black.c2aa07583460b79994ae.woff2",
     "index.html": "/uclicked-claudine/index.html",
     "main.a6655af3.css.map": "/uclicked-claudine/static/css/main.a6655af3.css.map",
-    "main.8b1ccb3f.js.map": "/uclicked-claudine/static/js/main.8b1ccb3f.js.map"
+    "main.faf04c28.js.map": "/uclicked-claudine/static/js/main.faf04c28.js.map"
   },
   "entrypoints": [
     "static/css/main.a6655af3.css",
-    "static/js/main.8b1ccb3f.js"
+    "static/js/main.faf04c28.js"
   ]
 }
