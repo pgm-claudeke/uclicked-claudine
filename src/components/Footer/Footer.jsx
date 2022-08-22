@@ -6,6 +6,7 @@ import { ROUTES } from '../../constants/routes';
 import { Link } from 'react-router-dom';
 
 const FooterBox = styled.div`
+    height: 22vh;
     width: 100vw;
     padding: 3rem 5rem;
     background: ${colors.primaryDarker};
@@ -17,23 +18,33 @@ const FooterBox = styled.div`
     justify-content: flex-start;
     gap: 8rem;
 
-    margin:
-
-    opacity: 0.6;
+    margin-top: 10rem;
     font-size: 1.2rem;
+
+    @media (max-width: 767px) {
+        height: 24rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
 `;
 
 const Logo = styled.p `
     font-family: 'Maven Pro Black';
     font-size: 1.5rem;
 
-    background-color: transparent;
+    @media (max-width: 767px) {
+        font-size: 1.2rem;
+    }
 `;
 
 const Description = styled.p`
     font-size: 1rem;
     opacity: 0.5;
     line-height: 1.5;
+
+    @media (max-width: 767px) {
+        font-size: 0.8rem;
+    }
 `;
 
 const Title = styled.p`
@@ -65,6 +76,10 @@ const NavLink = styled(Link)`
         color: ${colors.primary};
         cursor: pointer;
     }
+
+    @media (max-width: 767px) {
+        font-size: 0.9rem;
+    }
 `;
 
 const SocialsContainer = styled.div`
@@ -76,6 +91,10 @@ const SocialsContainer = styled.div`
 const SocialIcon = styled.a`
     :hover {
         color: ${colors.primary}
+    }
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
     }
 `;
 

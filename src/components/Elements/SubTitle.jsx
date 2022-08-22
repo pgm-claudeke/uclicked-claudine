@@ -31,10 +31,10 @@ const Title = styled.p`
 
 `;
 
-const SubTitle = ({title}) => {
+const SubTitle = ({title, fontSize}) => {
   return (
     <TitleBox>
-        <Title>{title}</Title>
+        <Title style={{fontSize:fontSize}}>{title}</Title>
     </TitleBox>
   )
 }

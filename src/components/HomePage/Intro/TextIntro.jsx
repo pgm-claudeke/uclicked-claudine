@@ -68,6 +68,7 @@ const MediaList = styled.div`
     @media (max-width: 767px) {
         margin-top: 1rem;
         border-radius: 4px;
+        gap: 1.5rem;
     }
 `;
 
@@ -75,7 +76,7 @@ const SocialIcon = styled.a`
     font-size: 1.2rem;
 
     @media (max-width: 767px) {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 `;
 

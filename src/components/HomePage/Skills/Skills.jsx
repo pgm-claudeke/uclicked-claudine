@@ -29,7 +29,7 @@ const SkillsSection = styled.section`
 
     @media (max-width: 767px) {
         height: fit-content;
-        margin: 5rem 0rem;
+        margin: 8rem 0rem;
     }
 `;
 
@@ -41,16 +41,13 @@ const SkillsBox = styled.ul`
     border-radius: 30px;
     padding: 5rem 4rem;
 
-    display: flex;
-    flex-direction: column; 
-    gap: 4rem;
-
     position: relative;
 
     @media (max-width: 767px) {
         height: fit-content;
         width: fit-content;
         padding: 1rem;
+        border-radius: 12px;
 
         flex-direction: column;
         gap: 1rem;
@@ -67,7 +64,9 @@ const SkillList = styled.ul`
     gap: 6rem;
 
     @media (max-width: 767px) {
-        gap: 1rem;
+        gap: 2rem;
+        width: 15rem;
+        padding: 0.5rem;
     }
 `;
 
@@ -83,7 +82,7 @@ export const Skills = () => {
   return (
     <SkillsSection>
         <SkillsBox>
-            <SubTitle title='Technologies I use'/>
+            <SubTitle title='Skills'/>
             <SkillList>
                 <SkillIcon><SiAdobeaftereffects/></SkillIcon>
                 <SkillIcon><SiAdobeaudition/></SkillIcon>
@@ -92,16 +91,12 @@ export const Skills = () => {
                 <SkillIcon><SiAdobephotoshop/></SkillIcon>
                 <SkillIcon><SiAdobepremierepro/></SkillIcon>
                 <SkillIcon><SiAdobexd/></SkillIcon>
-            </SkillList>
-            <SkillList>
                 <SkillIcon><SiReact/></SkillIcon>
                 <SkillIcon><SiNodedotjs/></SkillIcon>
                 <SkillIcon><SiCss3/></SkillIcon>
                 <SkillIcon><SiJavascript/></SkillIcon>
                 <SkillIcon><SiEleventy/></SkillIcon>
                 <SkillIcon><SiHandlebarsdotjs/></SkillIcon>
-            </SkillList>
-            <SkillList>
                 <SkillIcon><SiSass/></SkillIcon>
             </SkillList>
         </SkillsBox>

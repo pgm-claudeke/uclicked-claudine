@@ -11,7 +11,6 @@ const Home = () => {
             <Specializations/>
             <Skills/>
         </div>
-        
         <Footer/>
     </div>
   )

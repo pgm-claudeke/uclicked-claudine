@@ -10,11 +10,12 @@ const SquareContainer = styled.div`
     border-radius: 30px;
 
     position: absolute;
+    z-index: -1;
 `;
 
-const Square = ({ratio, radius}) => {
+const Square = ({ratio, radius, top, bottom, left, right}) => {
   return (
-    <SquareContainer style={{height:ratio, width:ratio, borderRadius:radius}}>
+    <SquareContainer style={{height:ratio, width:ratio, borderRadius:radius, top:top, bottom:bottom, left:left, right:right}}>
         
     </SquareContainer>
   )
