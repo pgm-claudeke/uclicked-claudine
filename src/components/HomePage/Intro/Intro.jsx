@@ -22,7 +22,7 @@ const IntroBox = styled.section`
         margin: 2rem 0rem;
 
         flex-direction: column-reverse;
-        gap: 2rem;
+        gap: 3rem;
     }
 `;
 

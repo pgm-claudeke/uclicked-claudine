@@ -5,6 +5,7 @@ import SubTitle from "./Elements/SubTitle";
 import Footer from "./Footer/Footer";
 import { Skills } from "./HomePage/Skills/Skills";
 import Categories from "./PortfolioPage/Categories/Categories";
+import ContactSec from "./ContactPage/ContactSec";
 
 export {
   Header,
@@ -13,5 +14,6 @@ export {
   Specializations,
   Skills,
   Categories,
+  ContactSec,
   Footer
 }

@@ -17,11 +17,6 @@ const Container = styled.div`
 
     transition: 0.1s all;
 
-    :hover {
-        scale: 1.05;
-        cursor: pointer;
-    }
-
     @media (max-width: 767px) {
         height: 8rem;
         width: 8rem; 

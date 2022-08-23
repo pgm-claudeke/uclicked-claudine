@@ -12,17 +12,15 @@ const CategoryContainer = styled.div`
     transition: all easeInOut;
 
     :hover{
-        scale: 1.03;
+        scale: 1.03; 
+        cursor: pointer;
     }
 
     @media (max-width: 767px) {
-        height: 11rem; 
-        width: 20rem;
+        height: 10rem; 
+        width: 18rem;
         border-radius: 8px;
     }
-`;
-
-const CategoryLink =  styled(Link)`
 `;
 
 const CategoryTitle = styled.div`
@@ -42,8 +40,8 @@ const CategoryTitle = styled.div`
     text-transform: uppercase;
 
     @media (max-width: 767px) {
-        height: 11rem; 
-        width: 20rem;
+        height: 10rem; 
+        width: 18rem;
         border-radius: 8px;
         font-size: 3rem;
     }
