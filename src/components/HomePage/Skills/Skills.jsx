@@ -27,6 +27,11 @@ const SkillsSection = styled.section`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1024px) {
+        height: fit-content;
+        margin: 12rem 4rem;
+    }
+
     @media (max-width: 767px) {
         height: fit-content;
         margin: 8rem 0rem;
@@ -42,6 +47,16 @@ const SkillsBox = styled.ul`
     padding: 5rem 4rem;
 
     position: relative;
+
+    @media (max-width: 1024px) {
+        height: fit-content;
+        width: fit-content;
+        padding: 2rem;
+        border-radius: 12px;
+
+        flex-direction: column;
+        gap: 1rem;
+    }
 
     @media (max-width: 767px) {
         height: fit-content;
@@ -63,6 +78,10 @@ const SkillList = styled.ul`
     justify-content: center;
     gap: 6rem;
 
+    @media (max-width: 1024px) {
+        gap: 2rem;
+    }
+    
     @media (max-width: 767px) {
         gap: 2rem;
         width: 15rem;
@@ -72,6 +91,10 @@ const SkillList = styled.ul`
 
 const SkillIcon = styled.li`
     font-size: 4.5rem;
+
+    @media (max-width: 1024px) {
+        font-size: 2.4rem;
+    }
 
     @media (max-width: 767px) {
         font-size: 2rem;

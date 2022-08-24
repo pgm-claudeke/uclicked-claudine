@@ -21,6 +21,13 @@ const FooterBox = styled.div`
     margin-top: 10rem;
     font-size: 1.2rem;
 
+    @media (max-width: 1024px) {
+        height: 16rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     @media (max-width: 767px) {
         height: 24rem;
         flex-direction: column;

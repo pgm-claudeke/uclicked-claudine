@@ -7,6 +7,10 @@ const SideContainer = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 1024px) {
+        align-items: left;
+    }
+
     @media (max-width: 767px) {
         justify-content: center;
         align-items: center;
@@ -19,6 +23,10 @@ const Title = styled.h2`
 
     font-family: 'Acumin Pro Black';
     font-size: 5rem;
+
+    @media (max-width: 1024px) {
+        font-size: 2.8rem;
+    }
 
     @media (max-width: 767px) {
         font-size: 2.2rem;
@@ -35,6 +43,10 @@ const Marked = styled.p`
     color: ${colors.primary};
     margin-left: 0.8rem;
 
+    @media (max-width: 1024px) {
+        font-size: 2.8rem;
+    }
+
     @media (max-width: 767px) {
         font-size: 2.2rem;
     }
@@ -44,6 +56,12 @@ const Description = styled.p`
     font-size: 1.5rem;
     width: 21rem;
     line-height: 1.5;
+
+    @media (max-width: 1024px) {
+        font-size: 1.2rem;
+        text-align: left;
+        width: 17rem;
+    }
 
     @media (max-width: 767px) {
         font-size: 1rem;

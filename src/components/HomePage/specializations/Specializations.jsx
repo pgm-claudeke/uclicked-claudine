@@ -13,6 +13,11 @@ const SpecializationsSection = styled.section`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1024px) {
+        height: fit-content;
+        margin: 0rem 4rem;
+    }
+
     @media (max-width: 767px) {
         height: fit-content;
         margin: 5rem 0rem;
@@ -28,6 +33,11 @@ const SpecializationsContainer = styled.div`
 
     position: relative;
 
+    @media (max-width: 1024px) {
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
     @media (max-width: 767px) {
         margin: 0 auto;
         gap: 1rem;
@@ -38,27 +48,32 @@ const SPECIALIZATIONS = [
     {
         icon: <BiSquare/>,
         name: "2D motion",
-        description: ""
+        description: "",
+        key: "two"
     },
     {
         icon: <BiCube/>,
         name: "3D motion",
-        description: ""
+        description: "",
+        key: "three"
     },
     {
         icon: <BiCodeBlock/>,
         name: "Web development",
-        description: ""
+        description: "",
+        key: "web"
     },
     {
         icon: <BiMoviePlay/>,
         name: "Video editing",
-        description: ""
+        description: "",
+        key: "video"
     },
     {
-        icon: <AiOutlineAudio/>,
+        icon: <AiOutlineAudio/>, 
         name: "Audio editing",
-        description: ""
+        description: "",
+        key: "audio"
     }
 ]
 
@@ -70,7 +85,7 @@ const Specializations = () => {
             <SubTitle title="What I do" />
             {
                 SPECIALIZATIONS.map((specialization) => 
-                    <Specialization icon={specialization.icon} name={specialization.name} description={specialization.description}/>
+                    <Specialization key={specialization.key} icon={specialization.icon} name={specialization.name} description={specialization.description}/>
                 )
             }
         </SpecializationsContainer>

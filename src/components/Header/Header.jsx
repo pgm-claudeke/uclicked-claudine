@@ -3,18 +3,18 @@ import styled from "styled-components";
 import { ROUTES } from "../../constants/routes";
 import { colors } from "../../constants/styles";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const HeaderBox = styled.header`
   padding: 3rem 5rem;
+  width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  height: 12vh;
-  width: 100vw;
 
   position: fixed;
   top: 0;
@@ -27,11 +27,12 @@ const HeaderBox = styled.header`
     rgba(0, 6, 18, 1) 100%
   );
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
+    padding: 2rem 3rem;
   }
 
   @media (max-width: 767px) {
-    padding: 0;
+    padding: 1.5rem 1.6rem;
   }
 `;
 
@@ -43,6 +44,10 @@ const NavList = styled.ul`
   gap: 5rem;
 
   background-color: transparent;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const NavItem = styled.li``;
@@ -56,30 +61,80 @@ const NavLink = styled(Link)`
     color: ${colors.primary};
     cursor: pointer;
   }
-`;
 
-const SelectedNav = styled.li`
-  font-size: 1.2rem;
-  font-family: "Acumin Pro Black";
-  position: relative;
-
-  background-color: transparent;
-
-  :after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: ${colors.primary};
-    bottom: 0;
-    left: 0;
-    margin: -0.5rem 0rem;
+  @media (min-width: 767px) and (max-width: 1024px) {
+    font-size: 1.8rem;
   }
 `;
 
-const Logo = styled.p`
+const NavBurger = styled.button`
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+    display: block;
+  }
+`;
+
+const CloseBtn = styled.button`
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2.5rem;
+
+  text-align: right;
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    font-size: 3rem;
+  }
+`;
+
+const NavPopUp = styled.div`
+  height: fit-content;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 2.5rem;
+
+  border-radius: 0 0 30px 30px;
+
+  background: ${colors.primaryDarker};
+  background: linear-gradient(45deg, rgba(0, 6, 18, 1), rgba(72,199,255,1));
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    padding: 4rem 6rem;
+  }
+`;
+
+const PopUpList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  list-style: none;
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    gap: 2rem;
+  }
+`;
+
+const Logo = styled(Link)`
   font-family: "Maven Pro Black";
   font-size: 2.5rem;
+  text-decoration: none;
+
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
 
   @media (max-width: 767px) {
     font-size: 1.5rem;
@@ -87,24 +142,23 @@ const Logo = styled.p`
 `;
 
 const Header = () => {
-  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [popUp, setPopUp] = useState(false);
 
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
+  const handleOpen = () => {
+    setPopUp(true);
+  };
 
-    window.addEventListener("resize", handleWindowResize);
+  const handleClose = () => {
+    setPopUp(false);
+  };
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+  console.log(popUp);
 
-  console.log(windowSize.innerWidth);
   return (
     <HeaderBox>
-      <Logo>Uclicked.</Logo>
+
+      <Logo to={ROUTES.HOME}>Uclicked.</Logo>
+
       <NavList>
         <NavItem>
           <NavLink to={ROUTES.HOME}>Home</NavLink>
@@ -116,13 +170,32 @@ const Header = () => {
           <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
         </NavItem>
       </NavList>
+
+      <NavBurger onClick={handleOpen}>
+        <GiHamburgerMenu />
+      </NavBurger>
+      {
+        popUp && 
+        <NavPopUp>
+            <CloseBtn onClick={handleClose}>
+                <IoClose/>
+            </CloseBtn>
+            <PopUpList>
+                <NavItem>
+                    <NavLink to={ROUTES.HOME}>Home</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to={ROUTES.PORTFOLIO}>Portfolio</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
+                </NavItem>
+            </PopUpList>
+        </NavPopUp>
+      }    
+      
     </HeaderBox>
   );
 };
-
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
-}
 
 export default Header;

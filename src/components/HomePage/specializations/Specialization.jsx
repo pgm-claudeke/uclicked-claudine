@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors, fontFamily } from '../../../constants/styles';
-import { HiChevronRight } from 'react-icons/hi';
 
 const Container = styled.div`
     height: 12rem;
@@ -17,6 +16,13 @@ const Container = styled.div`
 
     transition: 0.1s all;
 
+    @media (max-width: 1024px) {
+        height: 8rem;
+        width: 12.5rem; 
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
     @media (max-width: 767px) {
         height: 8rem;
         width: 8rem; 
@@ -28,6 +34,10 @@ const Container = styled.div`
 const IconBox = styled.p`
     font-size: 3rem;
 
+    @media (max-width: 1024px) {
+        font-size: 2.2rem;
+    }
+
     @media (max-width: 767px) {
         font-size: 2rem;
     }
@@ -36,6 +46,11 @@ const IconBox = styled.p`
 const Name = styled.p`
     font-family: ${fontFamily.title};
     font-size: 1.8rem;
+
+    @media (max-width: 1024px) {
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
     @media (max-width: 767px) {
         font-size: 1rem;
