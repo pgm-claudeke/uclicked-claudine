@@ -1,12 +1,12 @@
 import React from 'react';
-import { Header, Footer, Categories } from '../components';
+import { Header, Footer, Portfolios } from '../components';
 
 const Portfolio = () => {
   return (
     <div>
         <Header/>
         <div>
-            <Categories/>
+            <Portfolios/>
         </div>
         <Footer/>
     </div>

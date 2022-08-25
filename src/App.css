@@ -4,4 +4,7 @@
 
 body {
   background-color: #000612;
+  max-width: 1800px;
+
+  margin: 0 auto;
 }

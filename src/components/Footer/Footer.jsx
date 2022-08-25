@@ -5,9 +5,13 @@ import { colors } from '../../constants/styles';
 import { ROUTES } from '../../constants/routes';
 import { Link } from 'react-router-dom';
 
-const FooterBox = styled.div`
+const FooterBox = styled.footer`
+    max-width: 1800px;
+`;
+
+const FooterContainer = styled.div`
     height: 22vh;
-    width: 100vw;
+    width: 100%;
     padding: 3rem 5rem;
     background: ${colors.primaryDarker};
     background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
@@ -110,6 +114,7 @@ const SocialIcon = styled.a`
 const Footer = () => {
   return (
     <FooterBox>
+    <FooterContainer>
         <div>
             <Logo>Uclicked.</Logo>
             <Description>made by Claudine</Description>
@@ -132,6 +137,7 @@ const Footer = () => {
                 <SocialIcon href='https://vimeo.com/user95018657'><FaVimeoV/></SocialIcon>
             </SocialsContainer>
         </div>
+    </FooterContainer>
     </FooterBox>
   )
 }

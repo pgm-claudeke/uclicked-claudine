@@ -7,13 +7,18 @@ import { AiOutlineAudio } from 'react-icons/ai';
 
 const SpecializationsSection = styled.section`
     height: 100vh;
+    max-height: 1400px;
     margin: 0 14rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        margin: 0rem 4rem;
+    }
+
+    @media (max-width: 1200px) {
         height: fit-content;
         margin: 0rem 4rem;
     }
@@ -25,6 +30,8 @@ const SpecializationsSection = styled.section`
 `;
 
 const SpecializationsContainer = styled.div`
+    width: fit-content;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -33,14 +40,16 @@ const SpecializationsContainer = styled.div`
 
     position: relative;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         margin: 0 auto;
         gap: 1rem;
+        max-width: 700px;
     }
 
     @media (max-width: 767px) {
         margin: 0 auto;
         gap: 1rem;
+        max-width: 480px;
     }
 `;
 

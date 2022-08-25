@@ -16,31 +16,33 @@ import {
     SiJavascript,
     SiEleventy,
     SiHandlebarsdotjs,
-    SiSass
+    SiSass,
+    SiCinema4D
 } from 'react-icons/si';
 
 const SkillsSection = styled.section`
     height: 100vh;
-    margin: 0rem 14rem;
+    max-height: 1400px;
+    margin: 10rem 14rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         height: fit-content;
         margin: 12rem 4rem;
     }
 
     @media (max-width: 767px) {
         height: fit-content;
-        margin: 8rem 0rem;
+        margin: 10rem 0rem;
     }
 `;
 
 const SkillsBox = styled.ul`
     height: fit-content;
-    width: 80rem; 
+    width: 100%; 
     background: ${colors.primary};
     background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
     border-radius: 30px;
@@ -48,9 +50,14 @@ const SkillsBox = styled.ul`
 
     position: relative;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        max-width: 1300px;
+    }
+
+    @media (max-width: 1200px) {
         height: fit-content;
         width: fit-content;
+        max-width: 700px;
         padding: 2rem;
         border-radius: 12px;
 
@@ -61,6 +68,7 @@ const SkillsBox = styled.ul`
     @media (max-width: 767px) {
         height: fit-content;
         width: fit-content;
+        max-width: 480px;
         padding: 1rem;
         border-radius: 12px;
 
@@ -78,13 +86,16 @@ const SkillList = styled.ul`
     justify-content: center;
     gap: 6rem;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        gap: 3.8rem;
+    }
+
+    @media (max-width: 1200px) {
         gap: 2rem;
     }
     
     @media (max-width: 767px) {
         gap: 2rem;
-        width: 15rem;
         padding: 0.5rem;
     }
 `;
@@ -92,7 +103,11 @@ const SkillList = styled.ul`
 const SkillIcon = styled.li`
     font-size: 4.5rem;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        font-size: 3.8rem;
+    }
+
+    @media (max-width: 1200px) {
         font-size: 2.4rem;
     }
 
@@ -114,6 +129,7 @@ export const Skills = () => {
                 <SkillIcon><SiAdobephotoshop/></SkillIcon>
                 <SkillIcon><SiAdobepremierepro/></SkillIcon>
                 <SkillIcon><SiAdobexd/></SkillIcon>
+                <SkillIcon><SiCinema4D/></SkillIcon>
                 <SkillIcon><SiReact/></SkillIcon>
                 <SkillIcon><SiNodedotjs/></SkillIcon>
                 <SkillIcon><SiCss3/></SkillIcon>

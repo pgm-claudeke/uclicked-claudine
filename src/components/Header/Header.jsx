@@ -7,7 +7,16 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
-const HeaderBox = styled.header`
+const HeaderBox =  styled.header` 
+    width: 100%;  
+    max-width: 1800px;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+`;
+
+const HeaderContainer = styled.div`
   padding: 3rem 5rem;
   width: 100%;
 
@@ -16,10 +25,6 @@ const HeaderBox = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  position: fixed;
-  top: 0;
-  z-index: 1;
-
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -27,7 +32,11 @@ const HeaderBox = styled.header`
     rgba(0, 6, 18, 1) 100%
   );
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1656px) {
+    padding: 2rem 4rem;
+  }
+
+  @media (max-width: 1200px) {
     padding: 2rem 3rem;
   }
 
@@ -45,7 +54,7 @@ const NavList = styled.ul`
 
   background-color: transparent;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -62,7 +71,7 @@ const NavLink = styled(Link)`
     cursor: pointer;
   }
 
-  @media (min-width: 767px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1200px) {
     font-size: 1.8rem;
   }
 `;
@@ -72,7 +81,7 @@ const NavBurger = styled.button`
   border: none;
   display: none;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     display: block;
     font-size: 2rem;
   }
@@ -92,7 +101,7 @@ const CloseBtn = styled.button`
 
   text-align: right;
 
-  @media (min-width: 767px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1200px) {
     font-size: 3rem;
   }
 `;
@@ -110,7 +119,7 @@ const NavPopUp = styled.div`
   background: ${colors.primaryDarker};
   background: linear-gradient(45deg, rgba(0, 6, 18, 1), rgba(72,199,255,1));
 
-  @media (min-width: 767px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1200px) {
     padding: 4rem 6rem;
   }
 `;
@@ -122,7 +131,7 @@ const PopUpList = styled.ul`
 
   list-style: none;
 
-  @media (min-width: 767px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1200px) {
     gap: 2rem;
   }
 `;
@@ -132,7 +141,7 @@ const Logo = styled(Link)`
   font-size: 2.5rem;
   text-decoration: none;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     font-size: 1.8rem;
   }
 
@@ -156,44 +165,46 @@ const Header = () => {
 
   return (
     <HeaderBox>
+        <HeaderContainer>
 
-      <Logo to={ROUTES.HOME}>Uclicked.</Logo>
+          <Logo to={ROUTES.HOME}>Uclicked.</Logo>
 
-      <NavList>
-        <NavItem>
-          <NavLink to={ROUTES.HOME}>Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to={ROUTES.PORTFOLIO}>Portfolio</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
-        </NavItem>
-      </NavList>
+          <NavList>
+            <NavItem>
+              <NavLink to={ROUTES.HOME}>Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to={ROUTES.PORTFOLIO}>Portfolio</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
+            </NavItem>
+          </NavList>
 
-      <NavBurger onClick={handleOpen}>
-        <GiHamburgerMenu />
-      </NavBurger>
-      {
-        popUp && 
-        <NavPopUp>
-            <CloseBtn onClick={handleClose}>
-                <IoClose/>
-            </CloseBtn>
-            <PopUpList>
-                <NavItem>
-                    <NavLink to={ROUTES.HOME}>Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to={ROUTES.PORTFOLIO}>Portfolio</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
-                </NavItem>
-            </PopUpList>
-        </NavPopUp>
-      }    
-      
+          <NavBurger onClick={handleOpen}>
+            <GiHamburgerMenu />
+          </NavBurger>
+          {
+            popUp && 
+            <NavPopUp>
+                <CloseBtn onClick={handleClose}>
+                    <IoClose/>
+                </CloseBtn>
+                <PopUpList>
+                    <NavItem>
+                        <NavLink to={ROUTES.HOME}>Home</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to={ROUTES.PORTFOLIO}>Portfolio</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
+                    </NavItem>
+                </PopUpList>
+            </NavPopUp>
+          }    
+
+        </HeaderContainer>
     </HeaderBox>
   );
 };

@@ -4,7 +4,7 @@ import Specializations from "./HomePage/specializations/Specializations";
 import SubTitle from "./Elements/SubTitle";
 import Footer from "./Footer/Footer";
 import { Skills } from "./HomePage/Skills/Skills";
-import Categories from "./PortfolioPage/Categories/Categories";
+import Portfolios from "./PortfolioPage/Portfolios";
 import ContactSec from "./ContactPage/ContactSec";
 
 export {
@@ -13,7 +13,7 @@ export {
   Intro,
   Specializations,
   Skills,
-  Categories,
+  Portfolios,
   ContactSec,
   Footer
 }

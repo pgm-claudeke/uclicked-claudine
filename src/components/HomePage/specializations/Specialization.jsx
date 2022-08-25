@@ -16,7 +16,7 @@ const Container = styled.div`
 
     transition: 0.1s all;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         height: 8rem;
         width: 12.5rem; 
         padding: 1rem;
@@ -34,7 +34,7 @@ const Container = styled.div`
 const IconBox = styled.p`
     font-size: 3rem;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         font-size: 2.2rem;
     }
 
@@ -47,7 +47,7 @@ const Name = styled.p`
     font-family: ${fontFamily.title};
     font-size: 1.8rem;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         font-size: 1.3rem;
         text-align: center;
     }

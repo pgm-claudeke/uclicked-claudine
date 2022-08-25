@@ -21,7 +21,16 @@ const SquareOne = styled.div`
 
     opacity: 0.5;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1656px) {
+        height: 9rem;
+        width: 9rem;
+        border-radius: 8px;
+
+        top: -2.2rem;
+        left: -2.2rem;
+    }
+
+    @media (max-width: 1200px) {
         height: 6rem;
         width: 6rem;
         border-radius: 8px;
@@ -53,7 +62,16 @@ const SquareTwo = styled.div`
 
     opacity: 0.5;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1656px) {
+        height: 14rem;
+        width: 14rem;
+        border-radius: 8px;
+
+        bottom: -2.2rem;
+        right: -2.2rem;
+    }
+
+    @media (max-width: 1200px) {
         height: 9rem;
         width: 9rem;
         border-radius: 8px;
@@ -82,7 +100,14 @@ const ImageBox = styled.div`
 
     position: relative;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1656px) {
+        height: 22rem;
+        width: 22rem;
+        padding: 0.4rem;
+        border-radius: 19px;
+    }
+
+    @media (max-width: 1200px) {
         height: 14rem;
         width: 14rem;
         padding: 0.4rem;
@@ -101,7 +126,11 @@ const Portait = styled.img`
     width: 100%;
     border-radius: 26px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1656px) {
+        border-radius: 14px;
+    }
+
+    @media (max-width: 1200px) {
         border-radius: 12px;
     }
 

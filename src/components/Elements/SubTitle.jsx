@@ -11,7 +11,13 @@ const TitleBox = styled.div`
     left: -2rem;
     z-index: -1;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        top: -3.6rem;
+        left: 0rem;
+        text-align: center;
+    }
+
+    @media (max-width: 1200px) {
         top: -2.2rem;
         left: 0rem;
         text-align: center;
@@ -31,7 +37,11 @@ const Title = styled.p`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1676px) {
+        font-size: 4.5rem;
+    }
+
+    @media (max-width: 1200px) {
         font-size: 2.8rem;
     }
     
