@@ -3,9 +3,24 @@ import styled from 'styled-components';
 import { colors, fontFamily } from '../../constants/styles';
 import SubTitle from '../Elements/SubTitle';
 import Project from './Project';
+import { Link } from "react-router-dom";
+import { PROJECTROUTES } from '../../constants/routes';
+
+import ThreeTN from '../../assets/portfolio/3d/QG/3d-QG-TN.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
+
+    @media (max-width: 1656px) {
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) { 
+        margin: 9rem 3rem;
+    }
+
+    @media (max-width: 767px) {
+        margin: 8rem 2rem;
+    }
 `;
 
 const FilterBox = styled.div`
@@ -17,6 +32,16 @@ const FilterBox = styled.div`
     height: fit-content;
 
     margin-bottom: 2.5rem;
+
+    @media (max-width: 1200px) {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 767px) {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 `;
 
 const FilterBtn = styled.button`
@@ -39,20 +64,55 @@ const ProjectList = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ProjectItem = styled.li`
 `;
 
+const ProjectLink = styled(Link)`
+`;
+
 
 const PROJECTS = [
     {
-        name: 'Food Kiosk',
-        category: 'web',
+        name: 'The Queens Gambit',
+        description: '3D Poster',
+        category: '3d',
+        img: ThreeTN,
+        link: PROJECTROUTES.TQG3D
     },
     {
-        name: 'Haunted',
-        category: 'video',
+        name: 'Food Kiosk',
+        description: 'Food kiosk react application',
+        category: 'web',
+        img: '',
+        link: PROJECTROUTES.TQG3D
+    },
+    {
+        name: 'Food Kiosk',
+        description: 'Food kiosk react application',
+        category: 'web',
+        img: '',
+        link: PROJECTROUTES.TQG3D
+    },
+    {
+        name: 'Food Kiosk',
+        description: 'Food kiosk react application',
+        category: 'web',
+        img: '',
+        link: PROJECTROUTES.TQG3D
+    },
+    {
+        name: 'Food Kiosk',
+        description: 'Food kiosk react application',
+        category: 'web',
+        img: '',
+        link: PROJECTROUTES.TQG3D
     },
 ]
 
@@ -68,27 +128,12 @@ const Portfolios = () => {
             <FilterBtn>3D</FilterBtn>
         </FilterBox>
         <ProjectList>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
-            <ProjectItem>
-                <Project></Project>
-            </ProjectItem>
+            {
+                PROJECTS.map((project) => 
+                     <ProjectItem><ProjectLink to={project.link}><Project name={project.name} description={project.description} img={project.img}/></ProjectLink></ProjectItem>
+                )
+            }
+           
         </ProjectList>
     </PortfolioSection>
   )

@@ -4,8 +4,6 @@ import { colors, fontFamily } from '../../constants/styles';
 import Square from './Square';
 
 const TitleBox = styled.div`
-    margin: 0 0 4rem 0;
-
     position: absolute;
     top: -5.5rem;
     left: -2rem;

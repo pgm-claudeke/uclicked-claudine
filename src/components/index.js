@@ -5,6 +5,7 @@ import SubTitle from "./Elements/SubTitle";
 import Footer from "./Footer/Footer";
 import { Skills } from "./HomePage/Skills/Skills";
 import Portfolios from "./PortfolioPage/Portfolios";
+import ProjectPage from "./PortfolioPage/ProjectPage";
 import ContactSec from "./ContactPage/ContactSec";
 
 export {
@@ -15,5 +16,6 @@ export {
   Skills,
   Portfolios,
   ContactSec,
+  ProjectPage,
   Footer
 }

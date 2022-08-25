@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion"
 
 const HeaderBox =  styled.header` 
     width: 100%;  
@@ -106,7 +107,7 @@ const CloseBtn = styled.button`
   }
 `;
 
-const NavPopUp = styled.div`
+const NavPopUp = styled(motion.div)`
   height: fit-content;
   width: 100%;
   position: fixed;
@@ -186,7 +187,7 @@ const Header = () => {
           </NavBurger>
           {
             popUp && 
-            <NavPopUp>
+            <NavPopUp initial={{y: '-20rem'}} animate={{y: 0}} transition={{type: "spring", damping: 20, bounce: 0.8, mass: 0.95, ease: 'easeOut'}}>
                 <CloseBtn onClick={handleClose}>
                     <IoClose/>
                 </CloseBtn>

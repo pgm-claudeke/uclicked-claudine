@@ -4,7 +4,8 @@ export const colors = Object.freeze({
   primaryDarker: '#328AB2',
   secondary: '#fff',
   secondaryLight: 'rgba(255, 255, 255, 0.4)',
-  tertiary: '#000612'
+  tertiary: '#000612',
+  tertiaryTrans: 'rgba(0, 6, 18, 0.6)'
 });
 
 export const fontWeights = Object.freeze({
