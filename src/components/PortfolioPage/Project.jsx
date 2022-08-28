@@ -75,17 +75,32 @@ const NameBox = styled.div`
         opacity: 1;
         cursor: pointer;
     }
+
+    @media (max-width: 767px) {
+        height: 12.5rem; 
+        width: 18.5rem;
+        border-radius: 8px;
+    }
 `;
 
 const Name = styled.p`
     max-width: 18rem;
     font-family: ${fontFamily.title};
     font-size: 1.5rem;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
 `;
  
 const Description = styled.p`
     font-family: ${fontFamily.text};
     font-size: 1rem;
+
+
+    @media (max-width: 767px) {
+        font-size: 0.8rem;
+    }
 `;
 
 

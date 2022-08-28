@@ -14,12 +14,44 @@ const ContactSection = styled.section`
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 1656px) {
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) { 
+        
+    }
+
+    @media (max-width: 767px) {
+        margin: 2rem 2rem;
+    }
+`;
+
+const Animation = styled.div`
+@media (max-width: 767px) {
+    scale: 0.8;
+}
 `;
 
 const Title = styled.p`
+text-align: center;
   font-family: ${fontFamily.title};
   font-size: 2rem;
+
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+}
 `;
+
+const Message = styled.p`
+text-align:center;
+font-family: ${fontFamily.text};
+font-size: 1.5rem;
+@media (max-width: 767px) {
+    font-size: 1rem;
+}
+`;
+
 const Contact = () => {
   const defaultOptions = {
     loop: true,
@@ -34,8 +66,11 @@ const Contact = () => {
     <div>
         <Header/>
       <ContactSection>
-        <Lottie options={defaultOptions} height={400} width={400} />
-        <Title>This page is still under construction.</Title>
+        <Animation>
+            <Lottie options={defaultOptions} height={400} width={400} />
+        </Animation>
+        <Title>Sorry, this page is still under construction.</Title>
+        <Message>Contact me by e-mail claudinedekesel@hotmail.com</Message>
       </ContactSection>
       <Footer/>
     </div>

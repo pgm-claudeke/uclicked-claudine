@@ -6,7 +6,7 @@ import Project from './Project';
 import { Link } from "react-router-dom";
 import { PROJECTROUTES } from '../../constants/routes';
 
-import ThreeTN from '../../assets/portfolio/3d/QG/3d-QG-TN.png';
+import ThreeTN from '../../assets/portfolio/3d/QueensGambit/3d-QG-TN.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
@@ -57,17 +57,31 @@ const FilterBtn = styled.button`
     }
 `;
 
+const ProjectsContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+`;
+
 const ProjectList = styled.ul`
     list-style: none;
+    width: fit-content;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
+    @media (max-width: 1656px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     @media (max-width: 767px) {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
 `;
 
@@ -81,38 +95,123 @@ const ProjectLink = styled(Link)`
 const PROJECTS = [
     {
         name: 'The Queens Gambit',
-        description: '3D Poster',
+        description: '3D Poster and animation',
         category: '3d',
         img: ThreeTN,
-        link: PROJECTROUTES.TQG3D
+        link: PROJECTROUTES.TQG3D,
+        date: ''
     },
     {
         name: 'Food Kiosk',
         description: 'Food kiosk react application',
         category: 'web',
         img: '',
-        link: PROJECTROUTES.TQG3D
+        link: PROJECTROUTES.TQG3D,
+        date: ''
     },
     {
-        name: 'Food Kiosk',
-        description: 'Food kiosk react application',
+        name: 'Chess App',
+        description: 'Chess Game Application',
         category: 'web',
         img: '',
-        link: PROJECTROUTES.TQG3D
+        link: PROJECTROUTES.TQG3D,
+        date: ''
     },
     {
-        name: 'Food Kiosk',
-        description: 'Food kiosk react application',
-        category: 'web',
+        name: 'Busted',
+        description: '3D character animation',
+        category: 'three',
         img: '',
-        link: PROJECTROUTES.TQG3D
+        link: PROJECTROUTES.TQG3D,
+        date: ''
     },
     {
-        name: 'Food Kiosk',
-        description: 'Food kiosk react application',
-        category: 'web',
+        name: 'Dia de los muertos',
+        description: '3D poster and animation',
+        category: 'three',
         img: '',
-        link: PROJECTROUTES.TQG3D
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Isometric Design',
+        description: '3D isometric design based on the series "stranger things"',
+        category: 'three',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'The Chase',
+        description: '3D chase animation',
+        category: 'three',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Bath Time',
+        description: 'Short horror comedy movie',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Tea Time',
+        description: 'Short horror movie',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Marble Run',
+        description: '3D marble run animation',
+        category: 'three',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Canon 200d Tutorial',
+        description: 'Tutorial video about the canon 200d camera',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'First Graffiti',
+        description: 'Hyperlapse/time-laps video',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Haunted',
+        description: 'Short horror movie',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Where It Began',
+        description: 'Short documentary about James Gillespie',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Independent during corona',
+        description: 'Short documentary an independent entrepreneur',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        date: ''
     },
 ]
 
@@ -127,6 +226,7 @@ const Portfolios = () => {
             <FilterBtn>2D</FilterBtn>
             <FilterBtn>3D</FilterBtn>
         </FilterBox>
+        <ProjectsContainer>
         <ProjectList>
             {
                 PROJECTS.map((project) => 
@@ -135,6 +235,7 @@ const Portfolios = () => {
             }
            
         </ProjectList>
+        </ProjectsContainer>
     </PortfolioSection>
   )
 }

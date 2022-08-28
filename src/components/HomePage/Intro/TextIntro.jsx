@@ -123,7 +123,7 @@ const TextIntro = () => {
             <SocialIcon href='https://github.com/pgm-claudeke'><FaGithub/></SocialIcon>
             <SocialIcon href='https://www.instagram.com/claudine_dekesel/'><FaInstagram/></SocialIcon>
             <SocialIcon href='https://www.linkedin.com/in/claudine-de-kesel-701659174/'><FaLinkedinIn/></SocialIcon>
-            <SocialIcon href=''><FaYoutube/></SocialIcon>
+            <SocialIcon href='https://www.youtube.com/channel/UCycalR_xH68ImZJBrql1aNQ'><FaYoutube/></SocialIcon>
             <SocialIcon href='https://vimeo.com/user95018657'><FaVimeoV/></SocialIcon>
         </MediaList>
     </SideContainer>
