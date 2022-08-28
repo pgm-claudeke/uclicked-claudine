@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uclicked-claudine/static/css/main.a954e861.css",
-    "main.js": "/uclicked-claudine/static/js/main.1caa0c30.js",
+    "main.js": "/uclicked-claudine/static/js/main.5709966b.js",
     "static/media/3d-QG-TN.png": "/uclicked-claudine/static/media/3d-QG-TN.970acc9a7dbcf0d63c5f.png",
     "static/media/deKesel_Claudine.jpg": "/uclicked-claudine/static/media/deKesel_Claudine.30306afbe091cbda285e.jpg",
     "static/media/Roboto-Black.woff": "/uclicked-claudine/static/media/Roboto-Black.96852435b86e3b391cca.woff",
@@ -14,10 +14,10 @@
     "static/media/MavenPro-Black.woff2": "/uclicked-claudine/static/media/MavenPro-Black.c2aa07583460b79994ae.woff2",
     "index.html": "/uclicked-claudine/index.html",
     "main.a954e861.css.map": "/uclicked-claudine/static/css/main.a954e861.css.map",
-    "main.1caa0c30.js.map": "/uclicked-claudine/static/js/main.1caa0c30.js.map"
+    "main.5709966b.js.map": "/uclicked-claudine/static/js/main.5709966b.js.map"
   },
   "entrypoints": [
     "static/css/main.a954e861.css",
-    "static/js/main.1caa0c30.js"
+    "static/js/main.5709966b.js"
   ]
 }
