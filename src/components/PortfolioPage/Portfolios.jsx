@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { colors, fontFamily } from '../../constants/styles';
 import SubTitle from '../Elements/SubTitle';
@@ -6,7 +6,10 @@ import Project from './Project';
 import { Link } from "react-router-dom";
 import { PROJECTROUTES } from '../../constants/routes';
 
-import ThreeTN from '../../assets/portfolio/3d/QueensGambit/3d-QG-TN.png';
+import QueensGambit from '../../assets/portfolio/3d/QueensGambit/thumbnail.png';
+import JollibeeKiosk from '../../assets/portfolio/web/JollibeeKiosk/JollibeeKiosk.png';
+import Busted from '../../assets/portfolio/3d/Busted/thumbnail.png';
+import MarbleRun from '../../assets/portfolio/3d/MarbleRun/thumbnail.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
@@ -94,18 +97,18 @@ const ProjectLink = styled(Link)`
 
 const PROJECTS = [
     {
-        name: 'The Queens Gambit',
-        description: '3D Poster and animation',
-        category: '3d',
-        img: ThreeTN,
-        link: PROJECTROUTES.TQG3D,
+        name: 'Jollibee Food Kiosk',
+        description: 'Food kiosk react application',
+        category: 'web',
+        img: JollibeeKiosk,
+        link: PROJECTROUTES.JOLLIBEEWEB,
         date: ''
     },
     {
-        name: 'Food Kiosk',
-        description: 'Food kiosk react application',
-        category: 'web',
-        img: '',
+        name: 'The Queen\'s Gambit',
+        description: '3D Poster and animation',
+        category: '3d',
+        img: QueensGambit,
         link: PROJECTROUTES.TQG3D,
         date: ''
     },
@@ -121,7 +124,15 @@ const PROJECTS = [
         name: 'Busted',
         description: '3D character animation',
         category: 'three',
-        img: '',
+        img: Busted,
+        link: PROJECTROUTES.TQG3D,
+        date: ''
+    },
+    {
+        name: 'Marble Run',
+        description: '3D marble run animation',
+        category: 'three',
+        img: MarbleRun,
         link: PROJECTROUTES.TQG3D,
         date: ''
     },
@@ -165,14 +176,7 @@ const PROJECTS = [
         link: PROJECTROUTES.TQG3D,
         date: ''
     },
-    {
-        name: 'Marble Run',
-        description: '3D marble run animation',
-        category: 'three',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
+
     {
         name: 'Canon 200d Tutorial',
         description: 'Tutorial video about the canon 200d camera',
@@ -216,15 +220,22 @@ const PROJECTS = [
 ]
 
 const Portfolios = () => {
+    const [filter, setFilter] = useState(null);
+
+    const handleFilter = (e) => {
+        console.log(e.target.value);
+        setFilter(e.target.value.toLowerCase());
+      };
+
   return (
     <PortfolioSection>
         <FilterBox>
             <SubTitle title='Portfolio'/>
-            <FilterBtn>All</FilterBtn>
-            <FilterBtn>Web</FilterBtn>
-            <FilterBtn>Video</FilterBtn>
-            <FilterBtn>2D</FilterBtn>
-            <FilterBtn>3D</FilterBtn>
+            <FilterBtn onClick={handleFilter} value='all'>All</FilterBtn>
+            <FilterBtn onClick={handleFilter} value='web'>Web</FilterBtn>
+            <FilterBtn onClick={handleFilter} value='video'>Video</FilterBtn>
+            <FilterBtn onClick={handleFilter} value='2d'>2D</FilterBtn>
+            <FilterBtn onClick={handleFilter} value='3d'>3D</FilterBtn>
         </FilterBox>
         <ProjectsContainer>
         <ProjectList>

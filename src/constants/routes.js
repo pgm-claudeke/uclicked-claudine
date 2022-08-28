@@ -6,4 +6,5 @@ export const ROUTES = Object.freeze({
 
 export const PROJECTROUTES = Object.freeze({
   TQG3D: '/uclicked-claudine/portfolio/3d-tqg-poster',
+  JOLLIBEEWEB: '/uclicked-claudine/portfolio/web-jollibee-foodkiosk'
 })
