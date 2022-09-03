@@ -7,9 +7,12 @@ import { Link } from "react-router-dom";
 import { PROJECTROUTES } from '../../constants/routes';
 
 import QueensGambit from '../../assets/portfolio/3d/QueensGambit/thumbnail.png';
-import JollibeeKiosk from '../../assets/portfolio/web/JollibeeKiosk/JollibeeKiosk.png';
+import JollibeeKiosk from '../../assets/portfolio/web/JollibeeKiosk/JollibeeKiosk_3.png';
 import Busted from '../../assets/portfolio/3d/Busted/thumbnail.png';
 import MarbleRun from '../../assets/portfolio/3d/MarbleRun/thumbnail.png';
+import TeaTime  from '../../assets/portfolio/video/TeatTime/thumbnail.png';
+import BathTime  from '../../assets/portfolio/video/BathTime/thumbnail.png';
+import ChessApp  from '../../assets/portfolio/web/ChessApp/thumbnail.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
@@ -102,96 +105,15 @@ const PROJECTS = [
         category: 'web',
         img: JollibeeKiosk,
         link: PROJECTROUTES.JOLLIBEEWEB,
-        date: ''
-    },
-    {
-        name: 'The Queen\'s Gambit',
-        description: '3D Poster and animation',
-        category: '3d',
-        img: QueensGambit,
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
+        year: '2022'
+    },    
     {
         name: 'Chess App',
         description: 'Chess Game Application',
         category: 'web',
-        img: '',
+        img: ChessApp,
         link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Busted',
-        description: '3D character animation',
-        category: 'three',
-        img: Busted,
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Marble Run',
-        description: '3D marble run animation',
-        category: 'three',
-        img: MarbleRun,
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Dia de los muertos',
-        description: '3D poster and animation',
-        category: 'three',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Isometric Design',
-        description: '3D isometric design based on the series "stranger things"',
-        category: 'three',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'The Chase',
-        description: '3D chase animation',
-        category: 'three',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Bath Time',
-        description: 'Short horror comedy movie',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Tea Time',
-        description: 'Short horror movie',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-
-    {
-        name: 'Canon 200d Tutorial',
-        description: 'Tutorial video about the canon 200d camera',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'First Graffiti',
-        description: 'Hyperlapse/time-laps video',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
+        year: '2022'
     },
     {
         name: 'Haunted',
@@ -199,7 +121,80 @@ const PROJECTS = [
         category: 'video',
         img: '',
         link: PROJECTROUTES.TQG3D,
-        date: ''
+        year: ''
+    },
+    {
+        name: 'The Queen\'s Gambit',
+        description: '3D Poster and animation',
+        category: '3d',
+        img: QueensGambit,
+        link: PROJECTROUTES.TQG3D,
+        year: '2020'
+    },
+
+    {
+        name: 'Busted',
+        description: '3D character animation',
+        category: 'three',
+        img: Busted,
+        link: PROJECTROUTES.BUSTED3D,
+        year: '2020'
+    },
+    {
+        name: 'Marble Run',
+        description: '3D marble run animation',
+        category: 'three',
+        img: MarbleRun,
+        link: PROJECTROUTES.MARBLERUN3D,
+        year: '2021'
+    },
+    {
+        name: 'Dia de los muertos',
+        description: '3D poster and animation',
+        category: 'three',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        year: '2020'
+    },
+    {
+        name: 'The Chase',
+        description: '3D chase animation',
+        category: 'three',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        year: '2020'
+    },
+    {
+        name: 'Bath Time',
+        description: 'Short horror comedy movie',
+        category: 'video',
+        img: BathTime,
+        link: PROJECTROUTES.TQG3D,
+        year: ''
+    },
+    {
+        name: 'Tea Time',
+        description: 'Short horror movie',
+        category: 'video',
+        img: TeaTime,
+        link: PROJECTROUTES.TEATIME,
+        year: ''
+    },
+    {
+        name: 'First Graffiti',
+        description: 'Hyperlapse/time-laps video',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        year: ''
+    },
+    {
+        name: 'Entrepreneur during corona',
+        description: 'Short documentary about an entrepreneur during covid',
+        category: 'video',
+        img: '',
+        link: PROJECTROUTES.TQG3D,
+        year: ''
     },
     {
         name: 'Where It Began',
@@ -207,15 +202,7 @@ const PROJECTS = [
         category: 'video',
         img: '',
         link: PROJECTROUTES.TQG3D,
-        date: ''
-    },
-    {
-        name: 'Independent during corona',
-        description: 'Short documentary an independent entrepreneur',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        date: ''
+        year: ''
     },
 ]
 

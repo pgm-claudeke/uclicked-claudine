@@ -4,8 +4,6 @@ import { Header, Footer, ProjectPage } from '../../../components';
 
 import QueensGambit from '../../../assets/portfolio/3d/QueensGambit/TQG.jpg';
 
-
-
 const Tqg = () => {
   return (
     <div>

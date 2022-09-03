@@ -6,5 +6,10 @@ export const ROUTES = Object.freeze({
 
 export const PROJECTROUTES = Object.freeze({
   TQG3D: '/uclicked-claudine/portfolio/3d-tqg-poster',
-  JOLLIBEEWEB: '/uclicked-claudine/portfolio/web-jollibee-foodkiosk'
+  BUSTED3D: '/uclicked-claudine/portfolio/3d-busted',
+  MARBLERUN3D: '/uclicked-claudine/portfolio/3d-marble-run',
+
+  JOLLIBEEWEB: '/uclicked-claudine/portfolio/web-jollibee-foodkiosk',
+
+  TEATIME:'/uclicked-claudine/portfolio/video-tea-time',
 })
