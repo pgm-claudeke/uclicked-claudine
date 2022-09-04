@@ -14,6 +14,8 @@ import TeaTime from '../../assets/portfolio/video/TeatTime/thumbnail.png';
 import BathTime from '../../assets/portfolio/video/BathTime/thumbnail.png';
 import ChessApp from '../../assets/portfolio/web/ChessApp/thumbnail.png';
 import Haunted from'../../assets/portfolio/video/Haunted/thumbnail.png';
+import DiaDeLosMuertos from '../../assets/portfolio/3d/DiaDeLosMuertos/thumbnail.png';
+import TheChase from '../../assets/portfolio/3d/TheChase/thumbnail.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
@@ -110,12 +112,12 @@ const PROJECTS = [
         year: '2022'
     },    
     {
-        name: 'Chess App',
-        key: 'ChessApp',
-        description: 'Chess Game Application',
+        name: 'Chess',
+        key: 'Chess',
+        description: 'Chess Game website',
         category: 'web',
         img: ChessApp,
-        link: PROJECTROUTES.TQG3D,
+        link: PROJECTROUTES.CHESSWEB,
         year: '2022'
     },
     {
@@ -124,7 +126,7 @@ const PROJECTS = [
         description: 'Short horror movie',
         category: 'video',
         img: Haunted,
-        link: PROJECTROUTES.TQG3D,
+        link: PROJECTROUTES.HAUNTED,
         year: ''
     },
     {
@@ -160,8 +162,8 @@ const PROJECTS = [
         key: 'DDLM',
         description: '3D poster and animation',
         category: '3d',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
+        img: DiaDeLosMuertos,
+        link: PROJECTROUTES.DDLM3D,
         year: '2020'
     },
     {
@@ -169,18 +171,9 @@ const PROJECTS = [
         key: 'TheChase',
         description: '3D chase animation',
         category: '3d',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
+        img: TheChase,
+        link: PROJECTROUTES.CHASE3D,
         year: '2020'
-    },
-    {
-        name: 'Bath Time',
-        key: 'BathTime',
-        description: 'Short horror comedy movie',
-        category: 'video',
-        img: BathTime,
-        link: PROJECTROUTES.TQG3D,
-        year: ''
     },
     {
         name: 'Tea Time',
@@ -191,19 +184,14 @@ const PROJECTS = [
         link: PROJECTROUTES.TEATIME,
         year: ''
     },
+
+]
+
+const LATER = [
     {
         name: 'First Graffiti',
         key: 'FirsGraf',
         description: 'Hyperlapse/time-laps video',
-        category: 'video',
-        img: '',
-        link: PROJECTROUTES.TQG3D,
-        year: ''
-    },
-    {
-        name: 'Entrepreneur during corona',
-        key: 'EDC',
-        description: 'Short documentary about an entrepreneur during covid',
         category: 'video',
         img: '',
         link: PROJECTROUTES.TQG3D,
@@ -215,6 +203,15 @@ const PROJECTS = [
         description: 'Short documentary about James Gillespie',
         category: 'video',
         img: '',
+        link: PROJECTROUTES.TQG3D,
+        year: ''
+    },
+    {
+        name: 'Bath Time',
+        key: 'BathTime',
+        description: 'Short horror comedy movie',
+        category: 'video',
+        img: BathTime,
         link: PROJECTROUTES.TQG3D,
         year: ''
     },
