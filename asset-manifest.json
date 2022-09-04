@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/uclicked-claudine/static/css/main.ece96474.css",
-    "main.js": "/uclicked-claudine/static/js/main.f9d84e88.js",
-    "static/media/TQG.mp4": "/uclicked-claudine/static/media/TQG.6be517b2ba345db9571a.mp4",
-    "static/media/JollibeeKiosk_01.png": "/uclicked-claudine/static/media/JollibeeKiosk_01.3093f98ccc8976bd9b0f.png",
-    "static/media/JollibeeKiosk_02.png": "/uclicked-claudine/static/media/JollibeeKiosk_02.9bcd08e2c8701bede8cb.png",
-    "static/media/thumbnail.png": "/uclicked-claudine/static/media/thumbnail.0a5adc757cdcad675469.png",
-    "static/media/JollibeeKiosk.png": "/uclicked-claudine/static/media/JollibeeKiosk.92fae667ff36168cb467.png",
+    "main.js": "/uclicked-claudine/static/js/main.34e6fd84.js",
+    "static/media/thumbnail.png": "/uclicked-claudine/static/media/thumbnail.0584ce9c3719e675c65e.png",
+    "static/media/JollibeeKiosk_1.png": "/uclicked-claudine/static/media/JollibeeKiosk_1.bef521a28ff706549422.png",
+    "static/media/JollibeeKiosk_6.png": "/uclicked-claudine/static/media/JollibeeKiosk_6.bb88d2014552f9594241.png",
+    "static/media/JollibeeKiosk_7.png": "/uclicked-claudine/static/media/JollibeeKiosk_7.366a6d3c89dda90fc52c.png",
+    "static/media/JollibeeKiosk_5.png": "/uclicked-claudine/static/media/JollibeeKiosk_5.5bd0616e42d9ce3cb1e3.png",
+    "static/media/JollibeeKiosk_4.png": "/uclicked-claudine/static/media/JollibeeKiosk_4.746bd1a9e4180b875a15.png",
+    "static/media/JollibeeKiosk_3.png": "/uclicked-claudine/static/media/JollibeeKiosk_3.92fae667ff36168cb467.png",
+    "static/media/JollibeeKiosk_13.png": "/uclicked-claudine/static/media/JollibeeKiosk_13.8932a5ddc259ebced8a1.png",
+    "static/media/JollibeeKiosk_12.png": "/uclicked-claudine/static/media/JollibeeKiosk_12.68c6fd5a0777ee8ffe14.png",
+    "static/media/JollibeeKiosk_14.png": "/uclicked-claudine/static/media/JollibeeKiosk_14.8ca5aa890c3b69d26259.png",
+    "static/media/JollibeeKiosk_8.png": "/uclicked-claudine/static/media/JollibeeKiosk_8.92e4e63b540c73408c78.png",
     "static/media/TQG.jpg": "/uclicked-claudine/static/media/TQG.f741bb789829a54e13e1.jpg",
+    "static/media/JollibeeKiosk_10.png": "/uclicked-claudine/static/media/JollibeeKiosk_10.20e385c8009dc39183b3.png",
+    "static/media/JollibeeKiosk_9.png": "/uclicked-claudine/static/media/JollibeeKiosk_9.a144eca343c076398942.png",
+    "static/media/JollibeeKiosk_2.png": "/uclicked-claudine/static/media/JollibeeKiosk_2.f9fa807867de49f4ed82.png",
+    "static/media/JollibeeKiosk_11.png": "/uclicked-claudine/static/media/JollibeeKiosk_11.c1d62d9f07d9ea396ef4.png",
     "static/media/deKesel_Claudine.jpg": "/uclicked-claudine/static/media/deKesel_Claudine.30306afbe091cbda285e.jpg",
     "static/media/Roboto-Black.woff": "/uclicked-claudine/static/media/Roboto-Black.96852435b86e3b391cca.woff",
     "static/media/Roboto-Regular.woff": "/uclicked-claudine/static/media/Roboto-Regular.9d8e838eac631e46f9d0.woff",
@@ -19,10 +29,10 @@
     "static/media/MavenPro-Black.woff2": "/uclicked-claudine/static/media/MavenPro-Black.c2aa07583460b79994ae.woff2",
     "index.html": "/uclicked-claudine/index.html",
     "main.ece96474.css.map": "/uclicked-claudine/static/css/main.ece96474.css.map",
-    "main.f9d84e88.js.map": "/uclicked-claudine/static/js/main.f9d84e88.js.map"
+    "main.34e6fd84.js.map": "/uclicked-claudine/static/js/main.34e6fd84.js.map"
   },
   "entrypoints": [
     "static/css/main.ece96474.css",
-    "static/js/main.f9d84e88.js"
+    "static/js/main.34e6fd84.js"
   ]
 }
