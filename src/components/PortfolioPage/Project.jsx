@@ -65,7 +65,6 @@ const NameBox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 
     text-align: center;
 

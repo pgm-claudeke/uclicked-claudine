@@ -10,9 +10,10 @@ import QueensGambit from '../../assets/portfolio/3d/QueensGambit/thumbnail.png';
 import JollibeeKiosk from '../../assets/portfolio/web/JollibeeKiosk/JollibeeKiosk_3.png';
 import Busted from '../../assets/portfolio/3d/Busted/thumbnail.png';
 import MarbleRun from '../../assets/portfolio/3d/MarbleRun/thumbnail.png';
-import TeaTime  from '../../assets/portfolio/video/TeatTime/thumbnail.png';
-import BathTime  from '../../assets/portfolio/video/BathTime/thumbnail.png';
-import ChessApp  from '../../assets/portfolio/web/ChessApp/thumbnail.png';
+import TeaTime from '../../assets/portfolio/video/TeatTime/thumbnail.png';
+import BathTime from '../../assets/portfolio/video/BathTime/thumbnail.png';
+import ChessApp from '../../assets/portfolio/web/ChessApp/thumbnail.png';
+import Haunted from'../../assets/portfolio/video/Haunted/thumbnail.png';
 
 const PortfolioSection = styled.section`
     margin: 16rem 7rem 10rem 7rem;
@@ -101,6 +102,7 @@ const ProjectLink = styled(Link)`
 const PROJECTS = [
     {
         name: 'Jollibee Food Kiosk',
+        key: 'JFK',
         description: 'Food kiosk react application',
         category: 'web',
         img: JollibeeKiosk,
@@ -109,6 +111,7 @@ const PROJECTS = [
     },    
     {
         name: 'Chess App',
+        key: 'ChessApp',
         description: 'Chess Game Application',
         category: 'web',
         img: ChessApp,
@@ -117,14 +120,16 @@ const PROJECTS = [
     },
     {
         name: 'Haunted',
+        key: 'Haunted',
         description: 'Short horror movie',
         category: 'video',
-        img: '',
+        img: Haunted,
         link: PROJECTROUTES.TQG3D,
         year: ''
     },
     {
         name: 'The Queen\'s Gambit',
+        key: 'TQG',
         description: '3D Poster and animation',
         category: '3d',
         img: QueensGambit,
@@ -134,38 +139,43 @@ const PROJECTS = [
 
     {
         name: 'Busted',
+        key: 'Busted',
         description: '3D character animation',
-        category: 'three',
+        category: '3d',
         img: Busted,
         link: PROJECTROUTES.BUSTED3D,
         year: '2020'
     },
     {
         name: 'Marble Run',
+        key: 'MarbleRun',
         description: '3D marble run animation',
-        category: 'three',
+        category: '3d',
         img: MarbleRun,
         link: PROJECTROUTES.MARBLERUN3D,
         year: '2021'
     },
     {
         name: 'Dia de los muertos',
+        key: 'DDLM',
         description: '3D poster and animation',
-        category: 'three',
+        category: '3d',
         img: '',
         link: PROJECTROUTES.TQG3D,
         year: '2020'
     },
     {
         name: 'The Chase',
+        key: 'TheChase',
         description: '3D chase animation',
-        category: 'three',
+        category: '3d',
         img: '',
         link: PROJECTROUTES.TQG3D,
         year: '2020'
     },
     {
         name: 'Bath Time',
+        key: 'BathTime',
         description: 'Short horror comedy movie',
         category: 'video',
         img: BathTime,
@@ -174,6 +184,7 @@ const PROJECTS = [
     },
     {
         name: 'Tea Time',
+        key: 'TeaTime',
         description: 'Short horror movie',
         category: 'video',
         img: TeaTime,
@@ -182,6 +193,7 @@ const PROJECTS = [
     },
     {
         name: 'First Graffiti',
+        key: 'FirsGraf',
         description: 'Hyperlapse/time-laps video',
         category: 'video',
         img: '',
@@ -190,6 +202,7 @@ const PROJECTS = [
     },
     {
         name: 'Entrepreneur during corona',
+        key: 'EDC',
         description: 'Short documentary about an entrepreneur during covid',
         category: 'video',
         img: '',
@@ -198,6 +211,7 @@ const PROJECTS = [
     },
     {
         name: 'Where It Began',
+        key: 'WIB',
         description: 'Short documentary about James Gillespie',
         category: 'video',
         img: '',
@@ -207,12 +221,27 @@ const PROJECTS = [
 ]
 
 const Portfolios = () => {
-    const [filter, setFilter] = useState(null);
+    const [filterCategory, setFilterCategory] = useState(null);
+
+    let collection
+    
+    if (filterCategory) {
+        collection = PROJECTS.filter(project => project.category === filterCategory);
+    } else {
+        collection = PROJECTS
+    }
 
     const handleFilter = (e) => {
         console.log(e.target.value);
-        setFilter(e.target.value.toLowerCase());
+        const filter = e.target.value.toLowerCase()
+        setFilterCategory(filter);
+
+        if (filter === 'all') {
+            setFilterCategory(null);
+        }
       };
+
+      console.log(collection)
 
   return (
     <PortfolioSection>
@@ -227,8 +256,8 @@ const Portfolios = () => {
         <ProjectsContainer>
         <ProjectList>
             {
-                PROJECTS.map((project) => 
-                     <ProjectItem><ProjectLink to={project.link}><Project name={project.name} description={project.description} img={project.img}/></ProjectLink></ProjectItem>
+                collection.map((project) => 
+                     <ProjectItem key={project.key}><ProjectLink to={project.link} ><Project name={project.name} description={project.description} img={project.img}/></ProjectLink></ProjectItem>
                 )
             }
            
