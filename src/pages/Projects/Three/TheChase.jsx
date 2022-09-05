@@ -9,10 +9,10 @@ const TheChase = () => {
         <Header/>
         <ProjectPage 
         title="The Chase"
-        description="This 3D animation was made to practice the movements in cinema 4d. I got a base movement where I had to make a chase scene from."
+        description="This 3D animation was made to practice the movements in cinema 4D. Base movements were delivered and I had to make a chase scene out of it."
         mainImage={thumbnail}
         videoId="n2JJuoUeEEM" 
-        technologies='cinema 4d'
+        technologies='cinema 4D'
         />
         <Footer/>
     </div>

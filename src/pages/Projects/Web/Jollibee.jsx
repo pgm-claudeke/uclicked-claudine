@@ -83,7 +83,7 @@ const Jollibee = () => {
         <Header/>
         <ProjectPage 
         title="Jollibee Food Kiosk"
-        description="This food kiosk application was made as an idea for a food chain. In this prototype I used Jollibee as an example of how the application would look like and how it works."
+        description="This food kiosk application was made as an idea for a food chain. In this prototype, I used Jollibee as an example of what the application would look like and how it works."
         mainImage={JollibeeKiosk}
         technologies='node.js, react, css, framer-motion'
         imageCollection={Images}

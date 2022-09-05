@@ -10,7 +10,7 @@ const TeaTime = () => {
         <Header/>
         <ProjectPage 
         title="The Queen's Gambit"
-        description="This is a story about two children playing tea time while having a ritual."
+        description="This is a story about two children playing tea time while having a ritual. The goal of this project was to stack sounds and make them a whole."
         mainImage={TeaTimeTN}
         videoId="tgZ6Kcm0UMA" 
         technologies='Premiere Pro and Audition'

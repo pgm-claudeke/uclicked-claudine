@@ -44,7 +44,8 @@ const ProjectBox = styled.div`
 `;
 
 const InfoContainer = styled.div`
-    height: 30rem;
+    height: fit-content;
+    min-height: 30rem;
     width: 50rem;
     background: ${colors.primary};
     background: linear-gradient(45deg, rgba(255,255,255,0), rgba(72,199,255,1));
@@ -182,6 +183,10 @@ const Extras = styled.p`
     }
 `;
 
+const GitRepo = styled.a`
+
+`;
+
 const ImageList = styled.div`
     display: flex;
     flex-direction: row;
@@ -243,9 +248,8 @@ const ProjectPage = ({title, description, mainImage, mainVideoId, videoId, techn
                 <div style={{marginTop:'3rem'}}>
                     <Extras>Technologies: {technologies}</Extras>
                     {
-                        gitRepo && <Extras>Github Repository: {gitRepo}</Extras>
+                        gitRepo && <Extras><GitRepo href={gitRepo}>Github Repository</GitRepo></Extras>
                     }
-                    
                 </div>
             </InfoContainer>
         </ProjectBox>

@@ -52,11 +52,12 @@ const Chess = () => {
         <Header/>
         <ProjectPage 
         title="Chess"
-        description="This is a prototype for a chess application. It is made for people who want to start learning how to play chess. The application will contain information about the game and pieces. Users will also be able to practice the game with others or on their own by solving some chess puzzles. You can share what you've learned and ask others for tips and tricks on the forum site"
+        description="This is a prototype for a chess application. It is made for people who want to start learning how to play chess. The application will contain information about the game and pieces. Users will also be able to practice the game with others or on their own by solving some chess puzzles. You can share what you've learned and ask others for tips and tricks on the forum site."
         mainImage={ChessTN}
         videoId="" 
         imageCollection={Images}
         technologies='eleventy, scss'
+        gitRepo='https://github.com/pgmgent-ui-prototyping/eleventy-sport-pgm-claudeke'
         />
         <Footer/>
     </div>
