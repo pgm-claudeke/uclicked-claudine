@@ -21,7 +21,7 @@ function App() {
           <Route path={PROJECTROUTES.JOLLIBEEWEB} element={<Jollibee/>}/>
           <Route path={PROJECTROUTES.CHESSWEB} element={<Chess/>}/>
 
-          <Route path={PROJECTROUTES.TEATIME} element={<Jollibee/>}/>
+          <Route path={PROJECTROUTES.TEATIME} element={<TeaTime/>}/>
           <Route path={PROJECTROUTES.HAUNTED} element={<Haunted/>}/>
 
           <Route path={ROUTES.CONTACT} element={<Contact/>}/>

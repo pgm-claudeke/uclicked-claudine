@@ -11,7 +11,7 @@ const Busted = () => {
         <Header/>
         <ProjectPage 
         title="Busted"
-        description="This 3D animation was made as an assignment for a school project. We were assigned to make a 3d character. Once the character was made, movements from mixamo were added to make a story."
+        description="This 3D animation was made to practice the techniques on how to build a  3D character in cinema 4d. I made a small story with the character and applied movements from Mixamo to the character itself."
         mainImage={BustedTN}
         videoId="gstmJYN1CHs" 
         technologies='cinema 4d, Mixamo'

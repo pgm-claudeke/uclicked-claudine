@@ -11,7 +11,7 @@ const MarbleRun = () => {
         <Header/>
         <ProjectPage 
         title="Marble Run"
-        description="This 3D animation was made as an assignment for a school project. We were assigned to make a 3d animation for video mapping."
+        description="This 3D animation was made for video mapping. I got a base of cubes where the mapping would be and made a marble run that connects all the cubes together."
         mainImage={MarbleRunTN}
         videoId="lwMZ9LGjxSo" 
         technologies='cinema 4d'

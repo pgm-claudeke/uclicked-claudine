@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { colors, fontFamily } from '../../constants/styles';
 import "../../../node_modules/video-react/dist/video-react.css";
@@ -17,9 +17,6 @@ const ProjectSection = styled.section`
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 1656px) {
-    }
-
     @media (min-width: 768px) and (max-width: 1200px) { 
         margin: 6rem 4rem 0rem 4rem;
     }
@@ -35,10 +32,8 @@ const ProjectBox = styled.div`
     align-items: center;
     margin-bottom: 5rem;
 
-    @media (max-width: 1656px) {
-    }
-
     @media (min-width: 768px) and (max-width: 1200px) { 
+        flex-direction: column;
         margin-bottom: 2rem;
     }
 
@@ -58,12 +53,15 @@ const InfoContainer = styled.div`
     padding: 5rem 5rem 5rem 12rem;
 
     @media (max-width: 1656px) {
+        height: fit-content;
+        padding: 5rem 5rem 5rem 8rem;
     }
 
     @media (min-width: 768px) and (max-width: 1200px) { 
+        width: 100%;
         height: fit-content;
+        border-radius: 7px;
         padding: 5rem 2rem 2rem 2rem;
-        width: 90%;
     }
 
     @media (max-width: 767px) {
@@ -84,10 +82,12 @@ const ProjectMain = styled.div`
     left: 10rem;
     
     @media (max-width: 1656px) {
+        left: 6rem;
     }
 
     @media (min-width: 768px) and (max-width: 1200px) { 
-        left: 4rem;
+        left: 0;
+        top: 2rem;
     }
 
     @media (max-width: 767px) {
@@ -117,6 +117,7 @@ const ImageBox = styled.div`
 const Image = styled.img`
     height: 100%;
     object-fit: cover;
+    left: 50%;
 
     @media (max-width: 1656px) {
     }
@@ -208,8 +209,8 @@ const BackBtn = styled(Link)`
 `;
 
 
-
 const ProjectPage = ({title, description, mainImage, mainVideoId, videoId, technologies, gitRepo, imageCollection, collectionHeight, collectionWidth, link}) => {
+    console.log(window.innerWidth)
 
     const onPlayerReady: YouTubeProps['onReady'] = (event) => {
         // access to player in all event handlers via event.target

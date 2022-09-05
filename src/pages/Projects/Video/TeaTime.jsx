@@ -10,7 +10,7 @@ const TeaTime = () => {
         <Header/>
         <ProjectPage 
         title="The Queen's Gambit"
-        description="This 3D poster/animation was made as an assignment for a school project. We were assigned to make a poster out of a movie or song title. Its purpose was to be creative with the letters and make them fit within its theme."
+        description="This is a story about two children playing tea time while having a ritual."
         mainImage={TeaTimeTN}
         videoId="tgZ6Kcm0UMA" 
         technologies='Premiere Pro and Audition'
