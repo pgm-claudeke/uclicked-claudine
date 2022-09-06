@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/uclicked-claudine/static/css/main.ece96474.css",
-    "main.js": "/uclicked-claudine/static/js/main.34e6fd84.js",
+    "main.js": "/uclicked-claudine/static/js/main.71c0b067.js",
+    "static/media/ChessApp_2.png": "/uclicked-claudine/static/media/ChessApp_2.b0ce35e2a89b694ba227.png",
     "static/media/thumbnail.png": "/uclicked-claudine/static/media/thumbnail.0584ce9c3719e675c65e.png",
+    "static/media/DiaDeLosMuertos.png": "/uclicked-claudine/static/media/DiaDeLosMuertos.c9009dc5e8812b8bfbe7.png",
     "static/media/JollibeeKiosk_1.png": "/uclicked-claudine/static/media/JollibeeKiosk_1.bef521a28ff706549422.png",
+    "static/media/ChessApp_4.png": "/uclicked-claudine/static/media/ChessApp_4.4da46a4dd61809e3fb96.png",
+    "static/media/ChessApp_3.png": "/uclicked-claudine/static/media/ChessApp_3.ecd698378427fa964999.png",
     "static/media/JollibeeKiosk_6.png": "/uclicked-claudine/static/media/JollibeeKiosk_6.bb88d2014552f9594241.png",
     "static/media/JollibeeKiosk_7.png": "/uclicked-claudine/static/media/JollibeeKiosk_7.366a6d3c89dda90fc52c.png",
     "static/media/JollibeeKiosk_5.png": "/uclicked-claudine/static/media/JollibeeKiosk_5.5bd0616e42d9ce3cb1e3.png",
@@ -17,7 +21,13 @@
     "static/media/JollibeeKiosk_10.png": "/uclicked-claudine/static/media/JollibeeKiosk_10.20e385c8009dc39183b3.png",
     "static/media/JollibeeKiosk_9.png": "/uclicked-claudine/static/media/JollibeeKiosk_9.a144eca343c076398942.png",
     "static/media/JollibeeKiosk_2.png": "/uclicked-claudine/static/media/JollibeeKiosk_2.f9fa807867de49f4ed82.png",
+    "static/media/ChessApp_5.png": "/uclicked-claudine/static/media/ChessApp_5.ec1a3bcd270f9e9d620d.png",
     "static/media/JollibeeKiosk_11.png": "/uclicked-claudine/static/media/JollibeeKiosk_11.c1d62d9f07d9ea396ef4.png",
+    "static/media/ChessApp_8.png": "/uclicked-claudine/static/media/ChessApp_8.cc8fd2dea4d597b3864b.png",
+    "static/media/ChessApp_7.png": "/uclicked-claudine/static/media/ChessApp_7.b94a75c18b70724d44b6.png",
+    "static/media/ChessApp_6.png": "/uclicked-claudine/static/media/ChessApp_6.fc06868ab93197fa4310.png",
+    "static/media/Logo.png": "/uclicked-claudine/static/media/Logo.64874e6c7428c8105309.png",
+    "static/media/ChessApp_1.png": "/uclicked-claudine/static/media/ChessApp_1.59fce6278dffa8c4b058.png",
     "static/media/deKesel_Claudine.jpg": "/uclicked-claudine/static/media/deKesel_Claudine.30306afbe091cbda285e.jpg",
     "static/media/Roboto-Black.woff": "/uclicked-claudine/static/media/Roboto-Black.96852435b86e3b391cca.woff",
     "static/media/Roboto-Regular.woff": "/uclicked-claudine/static/media/Roboto-Regular.9d8e838eac631e46f9d0.woff",
@@ -29,10 +39,10 @@
     "static/media/MavenPro-Black.woff2": "/uclicked-claudine/static/media/MavenPro-Black.c2aa07583460b79994ae.woff2",
     "index.html": "/uclicked-claudine/index.html",
     "main.ece96474.css.map": "/uclicked-claudine/static/css/main.ece96474.css.map",
-    "main.34e6fd84.js.map": "/uclicked-claudine/static/js/main.34e6fd84.js.map"
+    "main.71c0b067.js.map": "/uclicked-claudine/static/js/main.71c0b067.js.map"
   },
   "entrypoints": [
     "static/css/main.ece96474.css",
-    "static/js/main.34e6fd84.js"
+    "static/js/main.71c0b067.js"
   ]
 }
