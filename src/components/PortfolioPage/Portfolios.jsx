@@ -187,7 +187,7 @@ const PROJECTS = [
 
 ]
 
-const LATER = [
+/*const LATER = [
     {
         name: 'First Graffiti',
         key: 'FirsGraf',
@@ -215,7 +215,7 @@ const LATER = [
         link: PROJECTROUTES.TQG3D,
         year: ''
     },
-]
+]*/
 
 const Portfolios = () => {
     const [filterCategory, setFilterCategory] = useState(null);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header, Intro, Specializations, Skills, Footer } from '../components';
-import styled from 'styled-components';
 
 const Home = () => {
   return (

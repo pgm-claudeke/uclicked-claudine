@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { colors, fontFamily } from '../../constants/styles';
 import "../../../node_modules/video-react/dist/video-react.css";

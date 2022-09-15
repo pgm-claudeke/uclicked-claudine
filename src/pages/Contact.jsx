@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Header, Footer } from "../components";
-import { ContactSec } from "../components";
 import { fontFamily } from "../constants/styles";
 import Lottie from "react-lottie";
 import constructionAni from "../lotties/17033-icon-animation-for-under-construction-page.json";

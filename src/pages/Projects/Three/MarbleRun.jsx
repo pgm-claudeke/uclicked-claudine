@@ -1,6 +1,5 @@
 import React from 'react';
 
-import styled from 'styled-components';
 import { Header, Footer, ProjectPage } from '../../../components';
 
 import MarbleRunTN from '../../../assets/portfolio/3d/MarbleRun/thumbnail.png';

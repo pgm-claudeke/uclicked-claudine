@@ -1,6 +1,4 @@
 import React from 'react';
-
-import styled from 'styled-components';
 import { Header, Footer, ProjectPage } from '../../../components';
 
 import BustedTN from '../../../assets/portfolio/3d/Busted/thumbnail.png';

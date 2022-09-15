@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, fontFamily } from '../../constants/styles';
-import Square from './Square';
+import { fontFamily } from '../../constants/styles';
 
 const TitleBox = styled.div`
     position: absolute;

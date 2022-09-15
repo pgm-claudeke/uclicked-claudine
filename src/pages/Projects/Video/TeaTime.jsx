@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Header, Footer, ProjectPage } from '../../../components';
 
 import TeaTimeTN from '../../../assets/portfolio/video/TeatTime/thumbnail.png';

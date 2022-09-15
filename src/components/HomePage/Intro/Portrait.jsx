@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/styles';
 import portrait from '../../../assets/images/deKesel_Claudine.jpg';
-import Square from '../../Elements/Square';
 
 const PortraitBox = styled.div`
     position: relative;
